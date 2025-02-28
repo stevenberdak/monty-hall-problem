@@ -6,7 +6,7 @@ The Monty Hall problem is as follows:
 3. The contestant is given the option to choose between keeping their choice or switching to the other remaining door.
 
 The reason this problem is interesting is because it is provable that switching doors will yield a greater than 50% win ratio and
-not switching foors will yield a less than 50% win ratio.
+not switching doors will yield a less than 50% win ratio.
 
 ## Description
 
