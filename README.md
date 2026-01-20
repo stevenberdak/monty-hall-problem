@@ -26,7 +26,6 @@ python index.py
 ## Authors
 
 Steven Berdak<br/>
-sberdak@csustan.edu<br/>
 stevenberdak@gmail.com
 
 ## Acknowledgments
