@@ -1,24 +1,23 @@
-# Monty Hall Problem
+# Introduction
 
-The Monty Hall problem is as follows:
-1. A contestant is given 3 doors to choose from at random where only one of them is winning.
-2. After the contestant selects a door the host removes one of the other choices (which does not include the winning door).
-3. The contestant is given the option to choose between keeping their choice or switching to the other remaining door.
+When the correct solution to the Monty Hall Problem was given by Maralyn vos Savant in 1990 it divided even experienced staticians (https://en.wikipedia.org/wiki/Monty_Hall_problem). It can seem counter-intuitive to a great many people, including myself, upon hearing the results and so I set out to simultate the Monty Hall problem to show Savant's interpretation to be true and also to enhance my own knowledge
 
-The reason this problem is interesting is because it is provable that switching doors will yield a greater than 50% win ratio and
-not switching foors will yield a less than 50% win ratio.
+# The Monty Hall Problem
+The Monty Hall Problem is based around the idea of a gameshow with three doors for which a contestant can choose one in hopes to win the prize. The success of winning the prize is nuanced by the fact that after the contestant selects the first door the host then removes a door and the contestant is given the option to keep their original selection or to switch to the other remaining door.
 
-## Description
+It seems logical to assume that choosing between three doors should yield a 1/3 probability of success and between two doors a 1/2 probability of success. In actuality, however, by switching doors there is a 2/3 probability of winning the prize while keeping the original door choice maintains the initial 1/3 probability.
 
-A quick-and-dirty simulation of the Monty Hall problem.
+An intuitive explanation for why this is the case is that the host is never going to remove the door that contains the prize or the door that was chosen by the contestant. If the contestant did not initially choose the prize door and then switches doors in the second round they will win the prize which explains the 2/3 probability. The contestant initially had a 1/3 chance of winning, which also explains the 1/3 probability of losing if the contestant switches doors. If the contestant did not switch doors at all then they still retain the original 1/3 probability of winning.
 
-## Getting Started
+# Description
 
-### Dependencies
+This program performs a number of experiments specified by ITERS in both the not-switching-doors case and the switching-doors case to generate the distributions of winning games. The contestant selected door and the door containing the prize are randomly sampled using the Python random.choice function from the standard library. The results from both cases are output to the console.
+
+## Dependencies
 
 1. Python
 
-### Executing program
+## Executing program
 
 ```
 python index.py
