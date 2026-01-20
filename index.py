@@ -50,7 +50,7 @@ def do_experiment(iters: int, switch_door: bool):
   for i in range(iters):
     did_win_prize_arr.append(experiment(switch_door = switch_door, verbose = VERBOSE, debug = DEBUG))
 
-  print("Won prize % = " + str((did_win_prize_arr.count(True) / len(did_win_prize_arr))))
+  print("Win ratio = " + str((100 * did_win_prize_arr.count(True) / len(did_win_prize_arr))) + "%")
 
 ITERS = 1000
 
