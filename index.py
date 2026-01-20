@@ -6,10 +6,10 @@ DEBUG = False
 def experiment(switch_door: bool, verbose: bool = False, debug: bool = False) -> bool:
   doors = ['A', 'B', 'C']
 
-  # The door the car is behind
-  car_door = random.choice(doors)
+  # The door the prize is behind
+  prize_door = random.choice(doors)
   if verbose:
-    print("Car door = " + car_door)
+    print("Prize door = " + prize_door)
 
   # The contestant chosen door
   chosen_door = random.choice(doors)
@@ -18,7 +18,7 @@ def experiment(switch_door: bool, verbose: bool = False, debug: bool = False) ->
 
   # Candidate for eliminations after contestant selection
   elimination_candidates = list(
-      filter(lambda door: door != car_door and door != chosen_door, doors)
+      filter(lambda door: door != prize_door and door != chosen_door, doors)
   )
 
   # The door to eliminate
@@ -38,19 +38,19 @@ def experiment(switch_door: bool, verbose: bool = False, debug: bool = False) ->
 
   if debug:
     print("chosen door = " + chosen_door)
-    print("car door = " + car_door)
-    print(chosen_door == car_door)
+    print("prize door = " + prize_door)
+    print(chosen_door == prize_door)
 
-  # Return whether the chosen door equals the car door
-  return chosen_door == car_door
+  # Return whether the chosen door equals the prize door
+  return chosen_door == prize_door
 
 def do_experiment(iters: int, switch_door: bool):
-  won_car = []
+  did_win_prize_arr = []
 
   for i in range(iters):
-    won_car.append(experiment(switch_door = switch_door, verbose = VERBOSE, debug = DEBUG))
+    did_win_prize_arr.append(experiment(switch_door = switch_door, verbose = VERBOSE, debug = DEBUG))
 
-  print("Won car % = " + str((won_car.count(True) / len(won_car))))
+  print("Won prize % = " + str((did_win_prize_arr.count(True) / len(did_win_prize_arr))))
 
 ITERS = 1000
 
