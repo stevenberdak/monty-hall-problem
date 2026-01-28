@@ -2,7 +2,7 @@
 
 When the correct solution to the Monty Hall Problem was given by Maralyn vos Savant in 1990 it divided even experienced staticians (https://en.wikipedia.org/wiki/Monty_Hall_problem). The probabilities of winning the game can seem counter-intuitive to many people. This repository was created to show Savant's interpretation to be true using simulated experiments.
 
-# The Monty Hall Problem
+## The Monty Hall Problem
 The Monty Hall Problem is based around the idea of a gameshow with three doors for which a contestant can choose one in hopes to win the prize. The success of winning the prize is nuanced by the fact that after the contestant selects the first door the host then removes a door and the contestant is given the option to keep their original selection or to switch to the other remaining door.
 
 It seems logical to assume that choosing between three doors should yield a 1/3 probability of success and between two doors a 1/2 probability of success. In actuality, however, by switching doors there is a 2/3 probability of winning the prize while keeping the original door choice maintains the initial 1/3 probability.
