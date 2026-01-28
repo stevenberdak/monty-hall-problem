@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 When the correct solution to the Monty Hall Problem was given by Maralyn vos Savant in 1990 it divided even experienced staticians (https://en.wikipedia.org/wiki/Monty_Hall_problem). The probabilities of winning the game can seem counter-intuitive to many people. This repository was created to show Savant's interpretation to be true using simulated experiments.
 
