@@ -16,7 +16,7 @@ def experiment(switch_door: bool, verbose: bool = False, debug: bool = False) ->
   if verbose:
     print("Chosen door = " + chosen_door)
 
-  # Candidate for eliminations after contestant selection
+  # Candidates for elimination after contestant selection
   elimination_candidates = list(
       filter(lambda door: door != prize_door and door != chosen_door, doors)
   )
